@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    Aditi Kaushik
+  </title>
+</head>
+<body>
+  <h1>JavaScript Template Literals</h1>
+  <p>Template literals allows variables in strings:</p>
+  <p id = "demo"></p>
+  <p>Template literals are not supported in Internet Explorer.</p>
+  <script>
+    let header = "Template Literals";
+    let tags = ["template lierals","javascript","es6"];
+    
+    let html = `<h1>${header}</h1><ul>`;
+    
+    for(const x of tags) {
+      html += `<li>${x}</li>`
+    }
+    html += `</ul>`;
+    document.getElementById("demo").innerHTML = html;
+  </script>
+</body>
+</html>
+  
